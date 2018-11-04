@@ -1,0 +1,949 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+/* --------------------------------------------------HEADER---------------------------------------------------- */
+.head {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url("images/Header@1X.png"), url("images/Header-BG.png");
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 89px;
+  margin: 0 auto;
+  border-bottom: 1px solid #2c2e2f;
+}
+
+.box-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 631px;
+  height: 89px;
+  font-size: 16px;
+  font-family: "Lato-Medium", "MyriadPro-Regular", sans-serif;
+  color: #ffffff;
+}
+
+.box-nav span {
+  display: inline-block;
+  align-self: center;
+  height: inherit;
+  line-height: 5;
+}
+
+.box-nav span:hover {
+  border-bottom: 1px solid #ffffff;  
+}
+
+.box-nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.head-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;  
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.head-text h1 {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 72px;
+  font-family: "MyriadPro-Bold", "MyriadPro-Regular", sans-serif;
+}
+
+.head-text span {
+  font-size: 32px;
+  font-family: "Georgia-Italic", "MyriadPro-Regular", sans-serif;
+}
+
+.box-register {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 123px;
+  margin:0 auto;
+  font-size: 16px;
+  font-family: "Lato-Bold", "Lato-Medium", "MyriadPro-Regular", sans-serif;
+  color: rgba(255, 255, 255, 255);
+}
+
+.login {
+  width:100%;
+  background: #21424a;
+}
+
+.prl {
+  flex-grow: 0;
+  width: 23px;
+  background: #2fac6c;
+}
+
+.prl div {  
+  width: 0;
+  height: 0;
+  border-top: 123px solid #21424a;
+  border-right: 23px solid transparent;
+}
+
+.reg {
+  width:100%;
+  background: #2fac6c;
+}
+
+.wrap-reg {  
+  position: absolute;  
+  top: 53px;
+  left: 50%;
+  width: 681px;
+  height: 17px;
+  margin-right: -50%;  
+  line-height: 1;  
+  transform: translate(-50%);
+}
+
+.wrap-reg > :last-child {
+  float: right;
+}
+
+.wrap-reg span {
+  transition: 300ms;
+}
+
+.wrap-reg span:hover {
+  letter-spacing: 4px;
+  color:rgb(187, 187, 187);  
+  transition: 300ms;
+  cursor: pointer;
+}
+/* --------------------------------------------------MAIN------------------------------------------------------ */
+main {
+  width:auto;
+  height:auto;
+}
+/* --------------------------------------------------DOMAIN---------------------------------------------------- */
+.wrap-table {
+  height: 578px;
+  text-align: center;  
+  background: white;  
+}
+
+.wrap-table > :first-child {
+  display: block;
+  padding-top: 90px;
+  font-size: 24px;
+  font-family: "Lato-Heavy", "MyriadPro-Regular", sans-serif;
+  color: rgba(56, 55, 55, 255);
+}
+
+.wrap-table > :nth-child(2) {
+  display: block;
+  padding-top: 27px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Lato-Medium", "MyriadPro-Regular", sans-serif;
+  color: rgba(162, 162, 162, 255);  
+}
+
+.box-input {
+  display: flex;
+  align-items: center;
+  width: 889px;
+  height: 50px;
+  margin: 49px auto 0 auto;
+  border:1px solid rgba(203, 203, 203, 255);
+}
+
+.box-input > :first-child,
+.box-input > :last-child {
+  width: 70px;
+  height: 32px;
+  line-height: 25px;
+  font-family: "Lato-Semibold", "Lato-Regular", "Lato-Bold", "MyriadPro-Regular", sans-serif;  
+  color: rgba(203, 203, 203, 255);  
+}
+
+.box-input > :first-child {
+  padding-top: 4px;
+  font-size: 16px;
+  border-right: 1px solid rgba(203, 203, 203, 255);
+}
+
+.box-input > :last-child {  
+  position: relative;
+  display: inline-block;
+  border-left: 1px solid rgba(203, 203, 203, 255);
+}
+
+.box-input > :last-child select{
+  height: 17px;
+  vertical-align: bottom;
+  color: rgba(203, 203, 203, 255);
+  background: white;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+.box-input > :last-child:after {
+  content: ">";
+  position: absolute;
+  top: 8.5px;
+  right: 6px;  
+  z-index: 3;
+  width: 22%;
+  height: 53%;
+  text-align: center;
+  font-size: 10px;
+  box-sizing: border-box;  
+  background-color: white;
+  transform: rotate(90deg);
+  pointer-events: none;
+}
+
+
+.box-input > :nth-child(2) {
+  width: 749px;
+  height: 32px;
+}
+
+.box-input div input{  
+  width: 730px;
+  height: 17px;
+  margin-top: 7px;
+  font-family:"Lato-Semibold", "MyriadPro-Regular", sans-serif;
+  font-size: 15px;
+  color: rgba(134, 134, 134, 255);  
+  border: none;
+  outline: none;
+}
+
+.box-table {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 892px;
+  height: 197px;
+  margin:38px auto 0 auto;
+  outline: 0.5px solid rgba(203, 203, 203, 255);
+}
+
+.grid-table {  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);  
+  width: 829px; 
+  height: 159px; 
+  margin: 0 auto;
+  line-height: 5.5;
+  outline: 1px solid white;
+}
+
+.grid-table div {
+  font-size: 14px;
+  font-family: "Lato-Regular", "MyriadPro-Regular", sans-serif;
+  color: rgba(203, 203, 203, 255);
+  outline: 0.5px solid rgba(203, 203, 203, 255);
+}
+
+.box-table > :first-child ::before,
+.box-table > :first-child ::after,
+.box-table::after {
+  position: absolute;
+  top: 92px;
+  content: "";  
+  width: 13px;
+  height: 13px;
+  background: white;  
+  border-radius: 6.5px;
+}
+
+.box-table > :first-child ::before {
+  right: 232px;
+}
+
+.box-table > :first-child ::after {
+  right: 439px;
+}
+
+.box-table::after {
+  left: 232px;
+}
+/* -----------------------------------------------------HOSTING-BACKGROUND------------------------------------------------- */
+.hosting {
+  display: flex;  
+  justify-content: center;
+  width: auto;
+  height:383px;
+  background-image:url("images/Packages\ Photo@1X-ov.png"),url("images/Packages\ Photo@1X.png");
+  background-repeat:no-repeat;  
+  background-position:  0 -220px;
+  background-size: cover; 
+}
+/* -------------------------------------------------------DIAGRAMS--------------------------------------------- */
+ .data-diagr {   
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 565px;
+  margin: 100px auto;
+}
+
+.data-diagr > div{ 
+  position:relative; 
+  width: 255px;
+  height:565px;
+  background-color: white;  
+  box-shadow: 0px 10px 10px -5px rgba(219,215,219,1);
+}
+
+.data-diagr > div:first-child {
+  border-top:5px solid #f9d423;
+}
+
+.data-diagr > div:nth-child(2) {
+  border-top:5px solid #7f8c8d;
+}
+
+.data-diagr > div:nth-child(3) {
+  border-top:5px solid #f85f40;
+}
+
+.data-diagr > div:last-child {
+  border-top:5px solid #1abc9c; 
+}
+
+.data-diagr div > div{
+  position:absolute;
+  top:52px;
+  left:120px;
+}
+
+.data-diagr div > p{
+  margin: 5px auto 16px auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 29px;
+  font-family: "Lato-Semibold", "Lato-Bold", "MyriadPro-Regular", sans-serif;
+  color: rgba(40, 40, 40, 255);
+}
+
+.data-diagr article {
+  width: 200px;
+  height: 282px;
+  margin: -3px auto;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdf;
+}
+
+.general-info {  
+  float:left;
+  width: 150px;
+  height:238px;  
+}
+
+.numbers {
+  float:right;
+  width: 50px;
+  height: 238px;
+}
+
+article p {  
+  margin: 25px 0;
+  font-size: 16px;
+  line-height: 12px;
+}
+
+article .general-info p {
+  text-align: left;
+  font-family: "Lato-Bold", "Lato-Semibold", "MyriadPro-Regular", sans-serif;
+  color: #dfdfdf;
+}
+
+article .numbers p {
+  text-align: right;
+  font-family: "Lato-Light", "Lato-Semibold", "MyriadPro-Regular", sans-serif;
+}
+
+.data-diagr > div:first-child .numbers p{
+  color:#f9d423;
+}
+
+.data-diagr > div:nth-child(2) .numbers p{
+  color:#7f8c8d;
+}
+
+.data-diagr > div:nth-child(3) .numbers p{
+  color:#f85f40;
+}
+
+.data-diagr > div:last-child .numbers p{
+  color:#1abc9c;
+}
+
+.data-diagr article ~ p{
+  margin-top: 26px;
+  text-align: center;font-size: 27px;
+  font-weight: bold;
+  font-family: "Lato-Heavy", "Lato-Bold", "MyriadPro-Regular", sans-serif; 
+  color:#282828;
+}
+
+.data-diagr article ~ p sup{
+  font-size:15px;
+}
+
+.data-diagr article ~ p span{
+  font-size: 13px;
+  font-family: "Lato-Regular", "Lato-Heavy", "Lato-Bold", "MyriadPro-Regular", sans-serif;
+  color:grey;
+}
+
+.data-diagr > div:first-child hr {  
+  width: 105px;
+  height: 3px;
+  margin: -14px auto;
+  background-color:#f9d423;
+  border: none;
+}
+
+.data-diagr > div:nth-child(2) hr {
+  background-color: #7f8c8d;  
+  height: 3px;
+  width: 105px;
+  margin: -14px auto;
+  border: none;
+}
+
+.data-diagr > div:nth-child(3) hr {
+  width: 105px;
+  height: 3px;
+  margin: -14px auto;
+  background-color: #f85f40;
+  border: none;
+}
+
+.data-diagr > div:last-child hr {
+  width: 105px;
+  height: 3px;
+  margin: -14px auto;
+  background-color: #1abc9c;
+  border: none;
+}
+
+.data-diagr > div hr ~ p {
+  margin-top:24px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Lato-Semibold", "Lato-Bold", "MyriadPro-Regular";
+  color: rgba(40, 40, 40, 255);
+}/* ---------------------------------------------------ABOUT-US--------------------------------------------------- */
+.about-us {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  height: 400px;
+  margin: 400px auto 0 auto;
+  border-top: 3px dotted #d5d5d5;
+}
+
+.about-txt span {
+  font-size: 35.11px;
+  font-family: "Lato-Black", "Lato-Semibold", "MyriadPro-Regular", sans-serif;
+  color:  rgba(48, 48, 48, 255);
+}
+
+.about-txt span > :first-child {
+  font-weight: 600;
+  font-family: "Lato-Regular", "Lato-Semibold", "MyriadPro-Regular", sans-serif;
+}
+
+.about-txt p {  
+  margin-right: 80px; 
+  text-align: justify;
+  line-height: 25px; 
+  font-size: 18.6px;  
+  font-family: "Lato-Thin", "MyriadPro-Regular", sans-serif;
+}
+
+.about-txt {
+  width: 520px;
+  height: 184px;
+  color: rgba(116, 116, 116, 255);
+  border-right: 3px dotted #d5d5d5;
+}
+
+.about-photos {
+  display: flex;
+  justify-content: flex-end;
+  width: 680px;
+  height: 184px;
+}
+
+.box-photos {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+  width: 600px;
+}
+
+.box-photos div{
+  width: 116px;
+  height: 184px;
+}
+
+.box-photos-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-photos-item > img {
+  height: 95px;
+  border:4px solid #e5e5e5;
+  border-radius: 47.5px;
+}
+
+.box-photos-item > :nth-child(2) {
+  font-size: 17px;
+  font-family: "Lato-Semibold", "MyriadPro-Regular", sans-serif;
+  color: rgba(48, 48, 48, 255);
+}
+
+.box-photos-item > :nth-child(3) {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: "Lato-Semibold", "MyriadPro-Regular", sans-serif;
+  color: rgba(142, 142, 142, 255);
+}
+
+.box-photos-item > :last-child {
+  display: flex;
+  justify-content: space-around;
+  width: 110px;
+  height: 17px;
+}
+
+.box-photos-item a:hover {
+  border:2px solid  #e5e5e5;
+  border-radius: 50%;
+  box-shadow: -1.6px 1.6px  rgba(0,0,0,0.6);  
+  transform: scale(1.5);
+}
+/* ----------------------------------------------SLIDER----------------------------------------------------- */
+.slideshow-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 193px;
+  color: white;
+  background: url("images/Comments\ BG\ Photo@1X.png"), url("images/slaider_back.png");
+  background-size: cover;
+}
+
+.mySlides {
+  display: none;
+  width: 886px;
+  height: 87px;
+}
+
+.box-slider-text {
+  height: 49px;
+  text-align: center;
+  font-size: 19px;
+  font-family: "Lato-Light", "MyriadPro-Regular", sans-serif;
+  color: rgba(255, 255, 255, 255);
+}
+
+.mySlides span {
+  display: inline-block;
+  width: 240px;
+  height: 21px;  
+  margin: 16px 190px;
+  text-align: right;
+  font-size: 20px;
+  font-family: "Lato-Bold", "MyriadPro-Regular", sans-serif;
+}
+
+.mySlides span::after {
+  position: absolute;
+  bottom: 52px;
+  padding-left: 10px;
+  content: "|";
+  font-size: 18px;  
+  color: #959594;
+}
+
+.box-dots {
+  position: absolute;
+  display: inline-block; 
+  margin-top: 33px; 
+  margin-left: 37px;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+
+.active {
+  background-color: white;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* --------------------------------------------ITEMS--------------------------------------------------- */
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height:342px;
+  background-color: white;
+}
+
+.items-container {
+  justify-content: space-between;
+  width: 1200px;
+  height: 147px;
+  display: flex;
+}
+
+.items-container a > div {
+  width: 222px;
+  height: 147px;
+}
+
+.items-container a > div > div {
+  width:auto;
+  height:30px;
+  margin-top:-48px;
+  text-align: center;
+}
+
+.items-container a > div p:nth-child(3) {
+  margin-top: 32px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Lato-Heavy", "MyriadPro-Regular", sans-serif;
+  color: rgba(48, 48, 48, 255);
+}
+
+.items-container a > div p:nth-child(4) {
+  margin-top: -13px;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  font-family: "Lato-Light","MyriadPro-Regular", sans-serif;
+  color: rgba(126, 126, 126, 255);
+}
+
+.items-container a {
+  text-decoration: none;;
+}
+
+.items-container a:hover {
+  transform: scale(1.2);
+}
+/* ---------------------------------------------FOOTER------------------------------------------- */
+footer {
+  width: auto;
+  height:294px;
+  background-color: #2a2a2a;
+}
+
+footer > div {
+  width: 1200px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+.top-footer {
+  width:inherit;
+  height: 74px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.logo-footer {
+  float: left;
+  width: 600px;
+  height: 74px;
+  background-image: url("images/Logo1X.png"), url("images/Logo@1X.png") ;
+  background-repeat: no-repeat;
+  background-size:  133px 29px;
+  background-position: 0 22px;
+}
+
+.nav-footer {
+  display: flex;
+  float:right;
+  width: 600px;
+  height: 74px;
+  justify-content: flex-end;
+  align-items:center;
+}
+
+.nav-footer div {
+  width:auto;
+  height: inherit;
+  margin-left: 48px;
+}
+
+.nav-footer div p {
+  font-size:12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  font-family: "Lato-Medium", "MyriadPro-Regular", sans-serif;
+  color: rgba(104, 104, 104, 255);
+}
+
+.nav-footer a {
+  text-decoration: none;
+}
+
+.nav-footer a:hover p {
+  color: rgba(255, 255, 255, 255);
+}
+
+.bottom-footer {
+  display: flex;
+  width:inherit;
+  height: 151px;
+  margin-top: 34px;
+}
+
+.first-column {
+  height:inherit;
+  width:376px;
+  border-right: 1px solid #4a4a4a;
+  display: flex;
+  align-items: center;
+}
+
+.first-column article{
+  width:292px;
+  height: 106px;
+}
+
+.first-column p {
+  margin-top: -5px;
+  font-size: 15px;
+  text-align: left;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  font-family: "Lato-Bold", "MyriadPro-Regular", sans-serif;
+  color: rgba(104, 104, 104, 255);
+}
+
+.first-column span {
+  font-family:  "Lato-Light", "Lato-Semibold", "Lato-Bold", "MyriadPro-Regular", sans-serif; 
+}
+
+.second-column {
+  display: flex;
+  width: 503px;
+  height:inherit;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #4a4a4a;
+}
+
+.second-column section {
+  width: 287px;
+  height: 99px;
+  border:none;
+}
+
+.second-column div:first-child{
+  float: left;
+  width: 116px;
+  height: inherit;
+}
+
+.second-column p{
+  margin-top: -7px;
+  font-size: 15px;
+  text-align: left;
+  line-height: 21px;
+  letter-spacing: -0.5px;
+  font-family:  "Lato-Light","MyriadPro-Regular", sans-serif;
+  color: rgba(104, 104, 104, 255);
+}
+
+.second-column a {
+  text-decoration: none;
+  color: rgba(104, 104, 104, 255);
+}
+
+.second-column p:before {
+  content: ">";
+}
+
+.second-column p:hover:before {
+  content: ">";
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 255);
+}
+
+.second-column a:hover {
+  color: rgba(255, 255, 255, 255);
+}
+
+.second-column div:last-child {
+  float: right;
+  width: 116px;
+  height: inherit;
+}
+
+.third-column {
+  display: flex;
+  width:320px;
+  height:inherit;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.third-column section {
+  width: 232px;
+  height: 103px;  
+  border: none;
+}
+
+.third-column p{
+  margin-top: -5px;
+  font-size: 15px;
+  text-align: left;
+  line-height: 24px;
+  letter-spacing: -0.5px; 
+  font-family: "Lato-Light", "MyriadPro-Regular", sans-serif;
+  color: rgba(104, 104, 104, 255);
+}
+
+.third-column a {
+  text-decoration: none;
+  color: rgba(104, 104, 104, 255);
+}
+
+.third-column a:hover {
+  color: white;
+}
+
+.third-column img{
+  margin-right:5px;
+}
+
+@font-face {
+  font-family: "Lato-Medium"; 
+  src: url("fonts/Lato-Medium.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+ }
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("fonts/Lato-Bold.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family:"Lato-Heavy";
+  src: url("fonts/Lato-Heavy.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family:"Lato-Semibold";
+  src: url("fonts/Lato-Semibold.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family:"Lato-Regular";
+  src: url("fonts/Lato-Semibold.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family:"Lato-Thin";
+  src: url("fonts/Lato-Thin.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family:"Lato-Black";
+  src: url("fonts/Lato-Black.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family:"Lato-Semibold";
+  src: url("fonts/Lato-Black.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family:"MyriadPro-Regular";
+  src: url("fonts/MyriadPro-Regular.otf"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family:"MyriadPro-Bold";
+  src: url("fonts/MyriadPro-Bold.otf"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family:"Georgia-Italic";
+  src: url("fonts/Georgia-Italic.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
